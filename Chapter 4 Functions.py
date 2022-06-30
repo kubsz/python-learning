@@ -8,6 +8,5 @@ def greet(lang):
 
 lang = input("Enter language:")
 greet(lang)
-git config --global user.email "pitajenlyla@gmail.com"
-git config --global user.name "lylapitajen"
+
 
