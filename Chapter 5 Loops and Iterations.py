@@ -6,16 +6,20 @@ count = 0
 total = 0.0
 while True:
     user_input = input("Enter a number:")
+
     if user_input == "done":
         if count == 0:
             continue
         break
+
+
     try:
         user_input = float(user_input)
     except:
         print("Invalid input")
         continue
-    count = count +  1
+
+    ++count
     total = total + user_input
 
 print (total, count, (total/count))
