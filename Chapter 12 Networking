@@ -1,0 +1,20 @@
+import urllib.request
+from bs4 import BeautifulSoup
+import re
+
+url = 'https://motherfuckingwebsite.com/'
+html = urllib.request.urlopen(url).read()
+soup = BeautifulSoup(html, "html.parser")
+
+soup_string = str(soup)
+
+#tasks set: count how many p tags and count how many times they used "fucking"
+
+#P TAGS
+# ptags = soup("p")
+# ptags_no = len(ptags)
+# print(ptags_no)
+
+#counts for "fucking"
+
+print(soup_string.count("fucking"))
